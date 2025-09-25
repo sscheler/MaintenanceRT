@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maintenance rt</title>
+        <link rel="stylesheet" href="style.css" href="message.css">
+
+        <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+
+  <script>
+    // Initialize Firebase with your project's config
+    var firebaseConfig = {
+     apiKey: "AIzaSyCSa2E5TMAHVjtONtHk5PQ5nEoLfDO57B0",
+  authDomain: "mrt5872-76785.firebaseapp.com",
+  projectId: "mrt5872-76785",
+  storageBucket: "mrt5872-76785.firebasestorage.app",
+  messagingSenderId: "722201940417",
+  appId: "1:722201940417:web:ef77e6165282b041031f40"
+};
+    firebase.initializeApp(firebaseConfig);
+
+    // Function to check if a user is logged in or not
+    function checkAuthState() {
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+          // User is not signed in, redirect to the login page
+          window.location.href = "login.html";
+        }
+      });
+    }
+  </script>
+
+    </head>
+   <body onload="checkAuthState()">
+      <div class="header">
+        <main class="main"></main>
+       <div class="b1" style="padding-top: 13px;"><nav><img src="images/logomain1.png">
+                <h1 class="center"; style="padding-top: 10px;">Location 55872</h1></nav></div>
+    <div class="side-nav">
+        <div class="user">
+            <img src="images/user-icon3.jpg" class="user-img">
+            <div>
+                <h2>Jason McDonough</h2>
+                <p>Tech in Charge/A Tech</p>
+                <p>DOT Expiration Date</p>
+                <p>00/00/202X</p>
+            </div>
+
+        </div class="side-nav">
+             <ul>
+                <li><img src="images/newsletter-icon2.gif"><a href="News.html";>Home</a></li>
+                <li><img src="images/cert-icon2.gif"><a href="ASE.html";>Certifations</a></li>
+                <li><img src="images/roundtable-icon2.gif"><a href="Roundtable.html";>Roundtable</a></li>
+                <li><img src="images/training-icon2.gif"><a href="Training.html";>Training</a></li>
+                <li><img src="images/shopping-icon2.gif"><a href="Shopping.html";>Shopping</a></li>
+                <li><img src="images/message-icon2.gif"><a href="Updates.html";>Messages</a></li>
+                <li><img src="images/logout-icon2.gif"><a href="login.html";>Logout</a></li></ul>
+                    </ul>
+        </div>
+            </div>
+    </div>
+    <div class="content-box">
+    <div style="padding-top: 50px";>
+          <h3 style="text-align: center";>Toolbox Talk</h3>
+        <p style="text-align: center";>Keeping You Informed and Up To Date</p>
+
+        <div style="padding-top: 30px";><h4>Welcome to Maintenance rt!</h4> 
+            <p>This sight is made as a common ground where information can be relayed and used for everyone.
+            Along the left side is your menu column. Up top is your information. Name, Position, tech status (A,B,C) as well as your DOT expiration date
+            Below are the pages you can navigate to.</p></div>
+<div style="padding-top: 50px ";>
+<hr class="solid">
+            <div style="text-align: center";><p  style="font-size: x-large";> Safety Messages September 15th-19th</p></div>
+<hr class="solid">
+
+</div>
+    <div class="flex-container">
+  <div id="thumbnail"; id="t2"; class="flex-item"><a target="_blank" href="images/SEPTEMBER 15, 20252.png">
+  <img src="images/SEPTEMBER 15, 20252.png" alt="Forest"></a></div>
+
+ <div id="thumbnail"; id="t2"; class="flex-item"><a target="_blank" href="images/SEPTEMBER 16, 2025 1.png">
+  <img src="images/SEPTEMBER 16, 2025 1.png" alt="Forest"></a></div>
+
+ <div id="thumbnail"; id="t2"; class="flex-item"><a target="_blank" href="images/SEPTEMBER 16, 2025 1.png">
+  <img src="images/SEPTEMBER 16, 2025 1.png" alt="Forest"></a></div>
+
+  <div id="thumbnail"; id="t2"; class="flex-item"><a target="_blank" href="images/SEPTEMBER 15, 20252.png">
+  <img src="images/SEPTEMBER 15, 20252.png" alt="Forest"></a></div>
+
+  <div id="thumbnail"; id="t2"; class="flex-item"><a target="_blank" href="images/SEPTEMBER 15, 20252.png">
+  <img src="images/SEPTEMBER 15, 20252.png" alt="Forest"></a></div>
+</div>
+   <hr class="solid"> 
+
+ <div style="padding-top: 30px";><p>
+            News/home is the home page you will be logged into as well as News, updates, pass along information along with weekend Rotation.
+            Certification brings you to study materials for your ASEs (books and videos)
+            Roundtable or rt is a place where you can find any information that related to your job. Diagrams, Specs, and anything that you or someone else thinks is knowledge able for everyone.
+            Training a place where all new hires will start. Videos that need to be watched, what is provided and what you need, such as a tool list.
+            Here you will also have a well mapped out way of how the job is to be preformed. Helping everyone be on the same page and a place to look back if you forget.
+            Shopping where you can buy tools from vendors along with buying and selling your old/ unneeded tools.
+            Messages Here you can be in contact with your Manager directly
+        </p></div>
+
+
+    <p style="text-align: center";>No News or Updates at this time. Check below for Weekend Rotation Schedule.</p>
+
+<div><p>
+    Saturday Rotation
+</p></div>
+
+    </div>
+    </div>
+
+</body>
+</html>
