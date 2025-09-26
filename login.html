@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" initial scale="1.0">
  <link rel="stylesheet" href="form.css">
 
-   <title>Login Page</title>
+  <title>Login Page</title>
   <!-- Add Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
@@ -20,22 +20,23 @@
     messagingSenderId: "1060708463163",
     appId: "1:1060708463163:web:da265fe034fbd1c030a21e",
     measurementId: "G-YP0CMZSBVL"
-  };
+  
+    };
     firebase.initializeApp(firebaseConfig);
   </script>
 
   <script>
     // Function to check if a user is logged in or not
-    function checkAuthState() {
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-          // User is signed in, proceed to the website
-          window.location.href = "News.html";
-        } else {
-          // No user is signed in, stay on the login page
-        }
-      });
-    }
+       firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in, allow access to the page content
+      } else {
+        // No user is signed in, redirect to login page
+        window.location.href = "login.html"; // Or your login route
+      }
+    });
+  
+    
 
     // Function to handle the login form submission
     function login() {
@@ -55,7 +56,6 @@
         });
     }
   </script>
-
 </head>
 <body onload="checkAuthState()">
 
