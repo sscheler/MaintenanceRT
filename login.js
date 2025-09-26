@@ -36,6 +36,22 @@ ApiFuture<WriteResult> result = docRef.set(data);
 // result.get() blocks on response
 System.out.println("Update time : " + result.get().getUpdateTime());
 
+// asynchronously retrieve all users
+ApiFuture<QuerySnapshot> query = db.collection("users").get();
+// ...
+// query.get() blocks on response
+QuerySnapshot querySnapshot = query.get();
+List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
+for (QueryDocumentSnapshot document : documents) {
+  System.out.println("User: " + document.getId());
+  System.out.println("First: " + document.getString("first"));
+  if (document.contains("middle")) {
+    System.out.println("Middle: " + document.getString("middle"));
+  }
+  System.out.println("Last: " + document.getString("last"));
+  System.out.println("Born: " + document.getLong("born"));
+}
+
 // Allow read/write access to a document keyed by the user's UID
 service cloud.firestore {
   match /databases/{database}/documents {
