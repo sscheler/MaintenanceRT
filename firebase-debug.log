@@ -1,0 +1,97 @@
+[debug] [2025-09-22T19:46:20.282Z] ----------------------------------------------------------------------
+[debug] [2025-09-22T19:46:20.289Z] Command:       /usr/local/bin/node /usr/local/bin/Firebase serve
+[debug] [2025-09-22T19:46:20.290Z] CLI Version:   14.17.0
+[debug] [2025-09-22T19:46:20.290Z] Platform:      darwin
+[debug] [2025-09-22T19:46:20.290Z] Node Version:  v22.19.0
+[debug] [2025-09-22T19:46:20.290Z] Time:          Mon Sep 22 2025 14:46:20 GMT-0500 (Central Daylight Time)
+[debug] [2025-09-22T19:46:20.290Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-22T19:46:20.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-22T19:46:20.492Z] > authorizing via signed-in user (maintenancertdev@gmail.com)
+[debug] [2025-09-22T19:46:20.492Z] [iam] checking project maintencert for permissions ["firebase.projects.get"]
+[debug] [2025-09-22T19:46:20.493Z] Checked if tokens are valid: false, expires at: 1758571271044
+[debug] [2025-09-22T19:46:20.493Z] Checked if tokens are valid: false, expires at: 1758571271044
+[debug] [2025-09-22T19:46:20.493Z] > refreshing access token with scopes: []
+[debug] [2025-09-22T19:46:20.494Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-22T19:46:20.494Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-22T19:46:20.770Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-22T19:46:20.771Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-22T19:46:20.789Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maintencert:testIamPermissions [none]
+[debug] [2025-09-22T19:46:20.789Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maintencert:testIamPermissions x-goog-quota-user=projects/maintencert
+[debug] [2025-09-22T19:46:20.789Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maintencert:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-22T19:46:21.068Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maintencert:testIamPermissions 200
+[debug] [2025-09-22T19:46:21.068Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maintencert:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-22T19:46:21.070Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.070Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.070Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/maintencert/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-22T19:46:21.070Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/maintencert/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/maintencert
+[debug] [2025-09-22T19:46:21.427Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/maintencert/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-22T19:46:21.427Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/maintencert/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-22T19:46:21.435Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.435Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.435Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/maintencert [none]
+[debug] [2025-09-22T19:46:21.547Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/maintencert 200
+[debug] [2025-09-22T19:46:21.547Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/maintencert {"projectNumber":"346016150452","projectId":"maintencert","lifecycleState":"ACTIVE","name":"MainteneceRT","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-22T19:44:39.031001Z"}
+[info] 
+[info] === Serving from '/Users/spencerscheler/Desktop'...
+[info] 
+[debug] [2025-09-22T19:46:21.551Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.552Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:21.552Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/maintencert/sites 
+[debug] [2025-09-22T19:46:22.055Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/maintencert/sites 200
+[debug] [2025-09-22T19:46:22.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/maintencert/sites {"sites":[{"name":"projects/maintencert/sites/maintencert","defaultUrl":"https://maintencert.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-09-22T19:46:22.056Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:22.056Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:22.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maintencert/webApps/-/config [none]
+[debug] [2025-09-22T19:46:22.517Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maintencert/webApps/-/config 200
+[debug] [2025-09-22T19:46:22.517Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maintencert/webApps/-/config {"projectId":"maintencert","storageBucket":"maintencert.firebasestorage.app","apiKey":"AIzaSyDu09IN1X4mFu-eqqEZzgq6n6jPBHTvBKg","authDomain":"maintencert.firebaseapp.com","messagingSenderId":"346016150452"}
+[debug] [2025-09-22T19:46:22.526Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:22.526Z] Checked if tokens are valid: true, expires at: 1758573979771
+[debug] [2025-09-22T19:46:22.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maintencert [none]
+[debug] [2025-09-22T19:46:22.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maintencert 200
+[debug] [2025-09-22T19:46:22.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maintencert {"projectId":"maintencert","projectNumber":"346016150452","displayName":"MainteneceRT","name":"projects/maintencert","resources":{"hostingSite":"maintencert"},"state":"ACTIVE","etag":"1_5bf4e67d-0960-45f0-a457-15c5632872fb"}
+[info] i  hosting[maintencert]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[maintencert]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:51 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:51 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:51.853Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js [none]
+[debug] [2025-09-22T19:46:51.857Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js [none]
+[debug] [2025-09-22T19:46:51.861Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-database-compat.js [none]
+[debug] [2025-09-22T19:46:51.865Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js [none]
+[debug] [2025-09-22T19:46:51.867Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-functions-compat.js [none]
+[debug] [2025-09-22T19:46:51.869Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-messaging-compat.js [none]
+[debug] [2025-09-22T19:46:52.052Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js 200
+[debug] [2025-09-22T19:46:52.053Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js [stream]
+[debug] [2025-09-22T19:46:52.093Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-functions-compat.js 200
+[debug] [2025-09-22T19:46:52.093Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-functions-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-functions-compat.js HTTP/1.1" 200 5789 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-functions-compat.js HTTP/1.1\" 200 5789 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.096Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-storage-compat.js [none]
+[debug] [2025-09-22T19:46:52.105Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-database-compat.js 200
+[debug] [2025-09-22T19:46:52.105Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-database-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-auth-compat.js HTTP/1.1" 200 41518 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-auth-compat.js HTTP/1.1\" 200 41518 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.110Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics-compat.js [none]
+[debug] [2025-09-22T19:46:52.126Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js 200
+[debug] [2025-09-22T19:46:52.126Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-app-compat.js HTTP/1.1" 200 10151 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-app-compat.js HTTP/1.1\" 200 10151 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.129Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js 200
+[debug] [2025-09-22T19:46:52.129Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js [stream]
+[debug] [2025-09-22T19:46:52.130Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-messaging-compat.js 200
+[debug] [2025-09-22T19:46:52.130Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-messaging-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-messaging-compat.js HTTP/1.1" 200 9792 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-messaging-compat.js HTTP/1.1\" 200 9792 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.136Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-remote-config-compat.js [none]
+[debug] [2025-09-22T19:46:52.137Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-performance-compat.js [none]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-database-compat.js HTTP/1.1" 200 49852 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-database-compat.js HTTP/1.1\" 200 49852 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.178Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-storage-compat.js 200
+[debug] [2025-09-22T19:46:52.178Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-storage-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-storage-compat.js HTTP/1.1" 200 14889 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-storage-compat.js HTTP/1.1\" 200 14889 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.245Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-performance-compat.js 200
+[debug] [2025-09-22T19:46:52.245Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-performance-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-firestore-compat.js HTTP/1.1" 200 106657 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-firestore-compat.js HTTP/1.1\" 200 106657 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.257Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-remote-config-compat.js 200
+[debug] [2025-09-22T19:46:52.257Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-remote-config-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-performance-compat.js HTTP/1.1" 200 13613 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-performance-compat.js HTTP/1.1\" 200 13613 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-remote-config-compat.js HTTP/1.1" 200 12183 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-remote-config-compat.js HTTP/1.1\" 200 12183 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[debug] [2025-09-22T19:46:52.286Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics-compat.js 200
+[debug] [2025-09-22T19:46:52.287Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics-compat.js [stream]
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /__/firebase/12.3.0/firebase-analytics-compat.js HTTP/1.1" 200 9062 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /__/firebase/12.3.0/firebase-analytics-compat.js HTTP/1.1\" 200 9062 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [22/Sep/2025:19:46:52 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Sep/2025:19:46:52 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
